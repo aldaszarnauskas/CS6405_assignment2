@@ -4,7 +4,7 @@ from sklearn.feature_selection import SelectKBest, chi2
 
 from sklearn.pipeline import Pipeline
 
-classifierMLP1 = Pipeline([
+classifierMLP = Pipeline([
     ('scaler', MinMaxScaler()),
     ('pca', PCA(n_components=0.99, svd_solver='auto')),
     ('scaler2', MinMaxScaler()),
